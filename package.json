@@ -1,0 +1,31 @@
+{
+  "name": "simple-sse",
+  "version": "0.0.1",
+  "description": "A really simple library to work with Server-Sent Events in Node.js",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha --growl -u bdd -t 5000 -R landing -b -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lesterpig/simple-sse.git"
+  },
+  "keywords": [
+    "server-sent",
+    "event",
+    "server",
+    "sent",
+    "push"
+  ],
+  "author": "Lesterpig",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/Lesterpig/simple-sse/issues"
+  },
+  "homepage": "https://github.com/Lesterpig/simple-sse",
+  "devDependencies": {
+    "eventsource": "^0.1.1",
+    "express": "^4.7.2",
+    "mocha": "^1.21.3"
+  }
+}
