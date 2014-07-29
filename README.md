@@ -72,6 +72,27 @@ Send an event to each client in "room" room. "room" parameter can be "*".
 Remove a client for Simple-SSE store. It will not close the connection to the client.
 Used internally when a client closes the connection.
 
+Client-side ?
+-------------
+
+Here is an example for a javascript client.
+
+```javascript
+var source = new EventSource("/link");
+source.addEventListener("eventName", function(e) {
+    console.log(e.data);
+});
+source.onmessage = function(e) {
+    //called when data is provided without event name
+}
+source.onopen = function(e) {
+    //called when socket is listenning
+}
+source.onerror = function(e) {
+    source.close();
+}
+```
+
 Test
 ----
 
