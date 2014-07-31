@@ -4,7 +4,7 @@
   "description": "A really simple library to work with Server-Sent Events in Node.js",
   "main": "lib/index.js",
   "scripts": {
-    "test": "mocha --growl -u bdd -t 5000 -R landing -b -w"
+    "test": "mocha --growl -u bdd -t 5000 -R landing -b"
   },
   "repository": {
     "type": "git",
