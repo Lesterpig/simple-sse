@@ -2,6 +2,7 @@ Simple Server-Sent Events
 =========================
 
 A really simple library to work with Server-Sent Events in Node.js
+
 [> Mozilla Reference][1]
 
 Installation
@@ -38,6 +39,11 @@ app.get('/realtime', function(req, res) {
 
 Returns a SSE client.
 
+####sse.setRetry(client, retry)
+
+Send retry interval to a specified client.
+If the browser lose connection to the server, it will wait `retry` ms before reconnecting.
+
 ####sse.join(client, room)
 
 When a client has to join a particular room. A client can join several rooms.
@@ -72,6 +78,11 @@ Send an event to each client in "room" room. "room" parameter can be "*".
 Remove a client for Simple-SSE store. It will not close the connection to the client.
 Used internally when a client closes the connection.
 
+####sse.heartbeat
+
+Heartbeat interval in ms. Default: 20000.
+
+
 Client-side ?
 -------------
 
@@ -99,10 +110,20 @@ Test
 If you have cloned/forked this repository, you can test it with **mocha**.
 Just type `npm test` in simple-sse directory.
 
+Changelog
+---------
+
+####v0.0.2
+
+- Added `retry(client, retry)` function.
+- Added heartbeat system to avoid connection loss in no data is passed.
+*(not tested for now)*
+
 Enjoy !
 -------
 
 This is a very simple library, but don't hesitate to fork and send pull requests :)
+
 *- Lesterpig, a french javascript addict.*
 
 
