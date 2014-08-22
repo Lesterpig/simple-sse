@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/Lesterpig/simple-sse",
   "devDependencies": {
-    "eventsource": "^0.1.1",
+    "eventsource": "^0.1.2",
     "express": "^4.7.2",
     "mocha": "^1.21.3"
   }

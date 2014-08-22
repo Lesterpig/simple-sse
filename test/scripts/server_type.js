@@ -13,7 +13,7 @@ app.get('/object', function(req, res) {
 
 app.get('/text', function(req, res) {
 	var _client = sse.add(req, res);
-	sse.send(_client, "Lorem ipsum\ndolor sit\namet.\nLorem.");
+	sse.send(_client, "Lorem ipsum\ndolor sit\namet.\n\nLorem.");
 });
 
 setTimeout(function() {

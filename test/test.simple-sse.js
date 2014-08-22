@@ -148,7 +148,7 @@ describe("Simple SSE", function() {
 					assert.strictEqual(true, o.data.defined);
 					client2 = new EventSource('http://localhost:3752/text');
 					client2.onmessage = function(m) {
-						assert.strictEqual(m.data, "Lorem ipsum\ndolor sit\namet.\nLorem.");
+						assert.strictEqual(m.data, "Lorem ipsum\ndolor sit\namet.\n\nLorem.");
 						done();
 					};
 				};
