@@ -113,18 +113,19 @@ Just type `npm test` in simple-sse directory.
 Changelog
 ---------
 
-####v0.0.2
+#### v0.0.3
+
+- Now works with node v0.12
+
+#### v0.0.2
 
 - Added `retry(client, retry)` function.
-- Added heartbeat system to avoid connection loss in no data is passed.
+- Added heartbeat system to avoid connection loss if no data is passed.
 *(not tested for now)*
 
 Enjoy !
 -------
 
 This is a very simple library, but don't hesitate to fork and send pull requests :)
-
-*- Lesterpig, a french javascript addict.*
-
 
   [1]: https://developer.mozilla.org/en-US/docs/Server-sent_events/Using_server-sent_events
